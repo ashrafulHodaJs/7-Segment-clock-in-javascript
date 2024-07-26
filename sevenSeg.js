@@ -14,7 +14,6 @@ function printSevenSegmentDigit(digit) {
   };
 
   if (digit >= 0 && digit <= 99) {
-    // Allow single digit as well
     const unitPlace = digit % 10;
     const tensPlace = Math.floor(digit / 10);
 
@@ -25,9 +24,6 @@ function printSevenSegmentDigit(digit) {
     ];
 
     console.log(output.join("\n"));
-  } else {
-    console.log("Please enter a valid number.");
-  }
-}
+  } 
 
-module.exports = { printSevenSegmentDigit }; // Correct export syntax
+module.exports = { printSevenSegmentDigit }; //exporting printSevenSegmentDigit fun

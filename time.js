@@ -1,4 +1,3 @@
-// time.js
 const { printSevenSegmentDigit } = require("./sevenSeg.js");
 const now = new Date();
 
@@ -10,12 +9,12 @@ const formattedHours = String(hours).padStart(2, "0");
 const formattedMinutes = String(minutes).padStart(2, "0");
 const formattedSeconds = String(seconds).padStart(2, "0");
 
-// Print each digit with proper formatting
+
 console.log("Hours:");
-printSevenSegmentDigit(parseInt(formattedHours)); // Print hours
+printSevenSegmentDigit(parseInt(formattedHours)); // Print hours in 7segDisplay
 
 console.log("\nMinutes:");
-printSevenSegmentDigit(parseInt(formattedMinutes)); // Print minutes
+printSevenSegmentDigit(parseInt(formattedMinutes)); // Print minutes in 7segDisplay
 
 console.log("\nSeconds:");
-printSevenSegmentDigit(parseInt(formattedSeconds)); // Print seconds
+printSevenSegmentDigit(parseInt(formattedSeconds)); // Print seconds in 7segDisplay
